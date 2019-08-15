@@ -1,7 +1,8 @@
 from django.db import models
 
 
-class Review(models.Model): #Mobel for book reviews
+class Review(models.Model):
+    """Model for book reviews"""
     my_email = models.CharField(max_length=40)
     books_name = models.CharField(max_length=80)
     rating = models.IntegerField(default=1)
